@@ -6,13 +6,13 @@ from inheritance_user_d import InheritanceUserD
 class Calc:
     def __init__(self):
         self.user_d = UserDisplay()
-        self.inheritance_calc = CalculatorOperator()
+        self.calc_op = CalculatorOperator()
         self.inheritance_calc = InheritanceCalc()
         self.inheritance_ud = InheritanceUserD()
     def run(self):
         math_operator = self.inheritance_ud.math_operator().lower()
 
-        if math_operator in ["addition", "subtraction", "multiplication", "division", "square root"]:
+        if math_operator in ["addition", "subtraction", "multiplication", "division"]:
             try:
                 first_number = self.user_d.user_number()
                 second_number = self.user_d.user_number()
