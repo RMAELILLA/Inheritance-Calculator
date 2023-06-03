@@ -35,7 +35,7 @@ class Calc:
             try:
                 first_number = self.user_d.user_number()
                 sqr_rt = self.inheritance_calc.cal_sqr_rt(first_number)
-                self.user_d.display_sqr_rt(sqr_rt)
+                self.inheritance_ud.display_sqr_rt(sqr_rt)
             except ValueError:
                 print("Field cannot include non-integer or non-numerical values or be blank.")
         else:
