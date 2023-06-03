@@ -13,8 +13,6 @@ class UserDisplay:
         print("The product is: ", multiplication)
     def display_division(self, division):
         print("The quotient is: ", division)
-    def display_sqr_rt(self, sqr_rt):
-        print("The square root is: ", sqr_rt)
     def math_operator2(self):
         math_operator2 = input("Do you want to calculate again? y/n: ")
         return math_operator2

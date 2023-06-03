@@ -12,7 +12,7 @@ class Calc:
     def run(self):
         math_operator = self.inheritance_ud.math_operator().lower()
 
-        if math_operator in ["addition", "subtraction", "multiplication", "division"]:
+        if math_operator in ["addition", "subtraction", "multiplication", "division", "power"]:
             try:
                 first_number = self.user_d.user_number()
                 second_number = self.user_d.user_number()
@@ -29,6 +29,9 @@ class Calc:
                 elif math_operator == "division":
                     division = self.inheritance_calc.cal_divide(first_number, second_number)
                     self.user_d.display_division(division)
+                elif math_operator == "power":
+                    power = self.inheritance_calc.cal_power(first_number, second_number)
+                    self.inheritance_ud.display_power(power)
             except ValueError:
                 print("Field cannot include non-integer or non-numerical values or be blank.")
         elif math_operator == "square root":
