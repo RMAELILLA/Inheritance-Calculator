@@ -1,5 +1,5 @@
 # Inheritance-Calculator
-
+This program act as a calculator from an inherited class python file.
     
 # ❓ How this program run:
 - opens the folder/file with any coding platform that can read python
